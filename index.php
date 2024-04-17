@@ -1,6 +1,6 @@
 <?php 
 
-include __DIR__ . '/api.php';
+// include __DIR__ . '/api.php';
 
 ?>
 
@@ -17,14 +17,31 @@ include __DIR__ . '/api.php';
 <body>
     
     <div id="app">
-        <div class="container">
-            <div class="row">
-                <div v-for="album in albums" class="col-4">
-                    <div class="card">
-                        {{ album.title }}
+        <div class="header">
+
+        </div>
+
+        <div class="main">
+
+            <div class="container w-75 text-success-emphasis album-box">
+                <div class="row">
+                    <div class="col-4 g-5">
+                        <div class="card text-center py-2 px-4 h-100">
+                            <!--                             
+                            <img :src="album.poster" :alt="album.title + ' by ' + album.author + ' cover image'" srcset="">
+                            
+                            <span class="fw-bold fs-5 title">{{ album.title }}</span>
+                            <span class="artist">{{ album.author }}</span>
+                            <span class="year fw-light pb-3">{{ album.year }}</span> -->
+                        </div>
                     </div>
                 </div>
+
             </div>
+        </div>
+
+        <div class="footer">
+
         </div>
     </div>
 
