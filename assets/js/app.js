@@ -13,8 +13,7 @@ createApp({
         axios.get(this.base_api_url)
         .then((result) =>{
             this.albums = result.data;
-            console.log(this.albums);
-            
+
         }).catch((err) => {
             console.log(err.message);
             this.error = err.message
