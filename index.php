@@ -1,6 +1,6 @@
 <?php
 
-// include __DIR__ . '/api.php';
+
 
 ?>
 
@@ -42,7 +42,7 @@
             <div class="container text-success-emphasis album-box mt-5">
                 <div class="row">
                     <div v-for="(album, index) in albums" class="col-4 g-5">
-                        <div class="card text-center py-4 px-4 h-100 w-100 text-white album_card">
+                        <div @click="anteprima(index)" class="card text-center py-4 px-4 h-100 w-100 text-white album_card">
 
                             <img :src="album.poster" :alt="album.title + ' by ' + album.author + ' cover image'" srcset="">
 

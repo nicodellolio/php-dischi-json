@@ -9,6 +9,9 @@ createApp({
             error: ''
         }
     },
+    methods(){
+
+    },
     mounted(){
         axios.get(this.base_api_url)
         .then((result) =>{
