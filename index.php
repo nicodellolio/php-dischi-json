@@ -1,4 +1,9 @@
-<?php ?>
+<?php 
+
+include __DIR__ . '/api.php';
+
+?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -11,6 +16,7 @@
     
     <div id="app">{{ message }}</div>
 
-        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./assets/js/app.js"></script>
 </body>
 </html>
