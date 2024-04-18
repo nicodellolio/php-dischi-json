@@ -6,11 +6,15 @@ createApp({
             albums: [],
             base_api_url: 'api.php',
             message: "Hello World",
-            error: ''
+            error: '',
+            show: false
         }
     },
-    methods(){
-
+    methods: {
+        anteprima(index) {
+            console.log(this.albums[index]);
+            this.show = true
+        }
     },
     mounted(){
         axios.get(this.base_api_url)

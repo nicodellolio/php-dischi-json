@@ -1,7 +1,5 @@
 <?php
 
-
-
 ?>
 
 
@@ -51,13 +49,25 @@
                             <span class="year pb-3">{{ album.year }}</span>
 
                         </div>
+
+                        <div v-if="show" class="container position-fixed">
+                            <div class="row">
+                                <div class="col-1">
+                                    <div class="card">
+                                        {{index}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
+                
             </div>
         </div>
 
     </div>
+
+
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.min.js' integrity='sha512-PJa3oQSLWRB7wHZ7GQ/g+qyv6r4mbuhmiDb8BjSFZ8NZ2a42oTtAq5n0ucWAwcQDlikAtkub+tPVCw4np27WCg==' crossorigin='anonymous' referrerpolicy='no-referrer'></script>
